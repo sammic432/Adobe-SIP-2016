@@ -1,16 +1,59 @@
+
 body {
-	background-color: white;
+	/*background-color: #DDDDBC;*/
+    background-color: rgb(255, 255, 255);
 }
 
 /*.top {
-	text-align: center;
+	text-align: right;
+}*/
+
+#heading {
+    float: right!important;
+    margin: 0 0 0px 0px;
+    padding: 5px;
+    letter-spacing: 3px;
+/*    background-color: rgb(255, 255, 255);*/
 }
-*/
+
+li {
+    float: left;
+    display: inline;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #999B7D;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 120px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #63654D;
+}
+
 .about-me{
     padding-top: 25px;
     padding-right: 30px;
     padding-bottom: 25px;
     padding-left: 30px;
+    margin-right:5px;
 }
 
 .about-me img {
@@ -20,12 +63,13 @@ body {
 }
 
 #gwclogo {
-	height: 70%;
-	width: 70%;
-	margin-right:5px;
+	height: 15%;
+	width: 15%;
+	/*background-color: rgb(255, 255, 255);*/
+	margin: 5px;
+    padding: 5px;
+    float: left;
 }
-
-
 
 .field-trip{
     padding-top: 25px;
@@ -38,4 +82,43 @@ body {
 	height: 50%;
 	width: 50%;
 	margin-right:5px;
+}
+
+div {
+    /*background-color: rgb(255, 255, 255);*/
+    margin: 20px;
+    padding: 40px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mySlides {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
+}
+
+.next {
+    cursor: pointer;
+    padding: 16px;
+    color: #DDDDBC;
+    font-weight: bold;
+    font-size: 30px;
+    float:right;
+    /*position:absolute;*/
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    cursor: pointer;
+    padding: 16px;
+    color: #DDDDBC;
+    font-weight: bold;
+    font-size: 30px;
+    float:left;
+    /*position:absolute;*/
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: #63654D;
 }
