@@ -1,11 +1,11 @@
 
 body {
-    /*background-color: #DDDDBC;*/
+	/*background-color: #DDDDBC;*/
     background-color: rgb(255, 255, 255);
 }
 
 /*.top {
-    text-align: right;
+	text-align: right;
 }*/
 
 #heading {
@@ -57,16 +57,16 @@ li a:hover {
 }
 
 .about-me img {
-    height: 20%;
-    width: 20%;
-    margin-right:5px;
+	height: 20%;
+	width: 20%;
+	margin-right:5px;
 }
 
 #gwclogo {
-    height: 15%;
-    width: 15%;
-    /*background-color: rgb(255, 255, 255);*/
-    margin: 5px;
+	height: 15%;
+	width: 15%;
+	/*background-color: rgb(255, 255, 255);*/
+	margin: 5px;
     padding: 5px;
     float: left;
 }
@@ -79,9 +79,9 @@ li a:hover {
 }
 
 .field-trip img {
-    height: 50%;
-    width: 50%;
-    margin-right:5px;
+	height: 50%;
+	width: 50%;
+	margin-right:5px;
 }
 
 div {
@@ -91,49 +91,15 @@ div {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.mySlides {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em
+.week {
+	margin: 20px;
+    padding: 40px;
 }
 
-.next {
-    cursor: pointer;
-    padding: 16px;
-    color: #DDDDBC;
-    font-weight: bold;
-    font-size: 30px;
-    float:right;
-    /*position:absolute;*/
-    border-radius: 0 3px 3px 0;
-}
-
-.prev {
-    cursor: pointer;
-    padding: 16px;
-    color: #DDDDBC;
-    font-weight: bold;
-    font-size: 30px;
-    float:left;
-    /*position:absolute;*/
-    border-radius: 0 3px 3px 0;
-}
-
-.prev:hover, .next:hover {
-  background-color: #63654D;
-}
-
-#aboutmesectionn {
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-}
-
-#aboutmesection{
-    height: 20%;
-    width: 20%;
-    margin-right:5px;
+.proj{
+	margin: 70px;
+    padding: 40px;
+    font-size: 15px;
 }
 
 .navbar{

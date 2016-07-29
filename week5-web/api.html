@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>api</title>
+    <style>
+      html, body {
+        height: 400px;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var my_fav = {lat: 37.777737, lng: -122.490889};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: my_fav
+        });
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">George Washington High School</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>George Washington High School</b> is a ' +
+            'public high school in Richmond District, San Francisco, California. '+
+            'George Washington High School opened on August 4, 1936 '+
+            'to serve as a secondary school for the citizens of San Francisco. '+
+            'The school was built on a budget of $8,000,000, on a site overlooking '+
+            'the Golden Gate Bridge.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+          position: my_fav,
+          map: map,
+          title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.771334, lng:-122.401841},
+          map: map ,
+          title:"ADOBE"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Adobe Systems</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Adobe Systems</b> is a ' +
+            'brick building located in San Francisco, at 601 '+
+            'Townsend Street. It is also a Girls Who Code '+
+            'location.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.783978, lng:-122.406685},
+          map: map ,
+          title:"WESTFIELD"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Westfield</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Westfield</b> is an ' +
+            'upscale, urban shopping mall located in San Francisco, California, '+
+            'managed by the Westfield Group and co-owned by Westfield and Forest City Enterprises. '+
+            'It is anchored by Nordstrom and Bloomingdale", and includes a Century Theatres '+
+            'multiplex, a Bristol Farms grocery store and a branch of San Francisco State University. '+
+            'It connects directly to the Powell Street transit station via an underground entrance.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.728137, lng:-122.476841},
+          map: map ,
+          title:"STONESTOWN"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Stonestown</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Stonestown</b> is a ' +
+            '862,000-square-foot shopping mall in San Francisco, California, '+
+            'anchored by Nordstrom and Macy"s, '+
+            'and is located immediately north of San Francisco State University.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.759528, lng:-122.42707},
+          map: map ,
+          title:"DELORES PARK"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Delores Park</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Delores Park</b> is a ' +
+            'city park in San Francisco, California. It is located two blocks south '+
+            'of Mission Dolores at the western edge of the Mission District. South '+
+            'of the park is a hillside area known as "Dolores Heights," while The Castro '+
+            'is located a short distance to the west.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.787797, lng:-122.505949},
+          map: map ,
+          title:"LANDS END"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Land"s End</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Land"s End</b> is a ' +
+            'park in San Francisco within the Golden Gate National Recreation Area. '+
+            'It is a rocky and windswept shoreline at the mouth of the Golden Gate Bridge, '+
+            'situated between the Sutro District and Lincoln Park and abutting Fort Miley Military Reservation. '+
+            'Numerous hiking trails follow the former railbeds of the Ferries and '+
+            'Cliff House Railway along the cliffs and also down to the shore.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.767119, lng:-122.476916},
+          map: map ,
+          title:"GOLDEN GATE PARK"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Golden Gate Park</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Golden Gate Park</b> is a ' +
+            ' large urban park consisting of 1,017 acres (412 ha) of public grounds, '+
+            'located in San Francisco, California, between the Sunset '+
+            'and the Richmond. Configured as a rectangle, '+
+            'it is similar in shape but 20 percent larger than '+
+            ' Central Park in New York, to which it is often compared. .</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var marker = new google.maps.Marker({
+          position: {lat:37.761538, lng:-122.511077},
+          map: map ,
+          title:"OCEAN BEACH"
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Ocean Beach</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Ocean Beach</b> is a ' +
+            'beach on the West coast of San Francisco, California, '+
+            'bordering the Pacific Ocean. It is adjacent to '+
+            'Golden Gate Park, the Richmond District, and the Sunset District. '+
+            'The Great Highway runs alongside the beach, and the Cliff '+
+            'House and the site of the former Sutro Baths sit at the northern end.</p> '+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp_2IJsRFVzCaWrtu2-6hu1pt2GLjWz_4&callback=initMap">
+    </script>
+  </body>
+</html>
